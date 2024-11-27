@@ -7,3 +7,4 @@ The solution includes three projects:
 
 First, build dll with a specific platform like arm64,x64 or anycpu. The dll will be built and output under wap project. Then build package with wap publish. The dll will be wrapped in package. 
 Currently, it works well in x64 machine with anycpu and x64 package. But when it can run on arm machine, dllhost.exe(x86) will load it but there is no menu displayed when right click on image or audio/video files. It can only work well when dll is built with arm64 and dllhost.exe(arm64) load it.
+I want to find a way that it can work on both arm and x64 machine with only one build for dll(like x86 build or x64 build or anycpu build)
