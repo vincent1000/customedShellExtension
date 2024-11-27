@@ -1,0 +1,7 @@
+I have work out a customed shell extension on x64 machine and it works well. When I installed the package on arm machine, it didn't and no menu showed.I found that dllhost.exe is arm64 and i think that's the reason that shell extension dll doesn't work well.And I do the following test:(the solution includes a windows application packing project, a wpf, a shellextension dll)
+1. build wap/wpf/dll in anycpu. Cannot work on arm
+2. build wap in arm, wpf/dll in anycpu. Cannot work on arm
+3. build dll in arm, and wap/dll in anycpu. work on arm
+So it seems the shell extension dll must be built arm based and if I want to run it on both x64 and arm machines. I need to build two packages. Is it possible to include two dll(one x64 and one arm64) into the package and use any dll according to the target platform?
+
+I also check some applications which can show customed shell extension.I find Clipchamp works well on arm though it is build in anycpu. I compare all relevant registry between my anycpu and Clipchamp. There is no difference. But mine doesn't work. I am not sure what's wrong.

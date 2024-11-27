@@ -1,0 +1,2 @@
+MainPackage=D:\Samples\Docs-ContextMenuSample\WapProjTemplate1\bin\ARM64\Release\WapProjTemplate1_1.0.0.0_ARM64.msix
+SymbolPackage=D:\Samples\Docs-ContextMenuSample\WapProjTemplate1\obj\ARM64\Release\Symbols\WapProjTemplate1_1.0.0.0_ARM64.appxsym
